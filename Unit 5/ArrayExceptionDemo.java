@@ -3,7 +3,7 @@
 and try to access the 10th element. Catch the exception and print an appropriate message.
  */
 
-public class First {
+public class ArrayExceptionDemo  {
     public static void main(String[] args) {
           int[] numbers = new int[5]; // Array of size 5
 
