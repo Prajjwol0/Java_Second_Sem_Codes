@@ -1,5 +1,5 @@
 /*
- * Write a Java program that demonstrates the basic concept of an exception. Create an array of size 5
+ 1* Write a Java program that demonstrates the basic concept of an exception. Create an array of size 5
 and try to access the 10th element. Catch the exception and print an appropriate message.
  */
 

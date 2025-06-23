@@ -1,5 +1,5 @@
 /* 
-Write a Java program that demonstrates the difference between a checked and an unchecked
+3* Write a Java program that demonstrates the difference between a checked and an unchecked
 exception. Use FileNotFoundException for the checked exception and ArithmeticException for the
 unchecked exception */
 

@@ -1,3 +1,7 @@
+/* 2* Write a Java program that intentionally causes a NullPointerException. Catch the exception and print
+a message indicating the error. */
+
+
 public class NullPointerExceptionDemo {
     public static void main(String[] args) {
         String text = null; // Declare a String reference but do not initialize it
