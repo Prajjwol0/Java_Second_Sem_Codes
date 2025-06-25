@@ -1,44 +1,33 @@
 // Create a Java class called Student with attributes for studentId, name, and grades. 
 // Write a method to calculate and return the average grade.
-import java.util.Scanner;
 public class Student {
     public int studentId;
     public String name;
-    private double[] grade;
-
-double sum;
-
-    Scanner input = new Scanner(System.in);
-
+    private double[] grades;
 
     // Constructor
-    Student(int studentId, String name, double[] grade,double sum) {
+    Student(int studentId, String name, double[] grades) {
         this.studentId = studentId;
         this.name = name;
-        this.grade = grade;
-        this.sum=sum;
+        this.grades = grades;
     }
 
-    // setter to set data
-
-    public void setGrade(double[] grade1){
-        grade=grade1;
+    // Setter for grades
+    public void setGrades(double[] grades) {
+        this.grades = grades;
     }
 
-    //getter to get data
-    public double[] getGrade(){
-        return grade;
+    // Getter for grades
+    public double[] getGrades() {
+        return grades;
     }
 
-    // Private method
-
-    private double calculateGrade(){
-        for (int i=0;i<5;i++){
-            grade[i]=input.nextDouble();
-
-            double sum=grade[i]+sum;
+    // Method to calculate average grade
+    public double calculateAverageGrade() {
+        double sum = 0;
+        for (double grade : grades) {
+            sum += grade;
         }
-       
+        return grades.length > 0 ? sum / grades.length : 0;
     }
-
 }
